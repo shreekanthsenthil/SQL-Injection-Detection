@@ -1,0 +1,20 @@
+Query,Length,Attack,Label
+ALTER DATABASE northwind DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_unicode_ci;,,none,norm
+"CREATE TABLE Category (id integer PRIMARY KEY AUTO_INCREMENT, categoryname varchar(255),description varchar(255)",,none,norm
+"INSERT INTO Products(Code,Name,Price,Manufacturer) VALUES(1,'Hard drive',240,5);",,none,norm
+"INSERT INTO Products(Code,Name,Price,Manufacturer) VALUES(2,'Memory',120,6);",,none,norm
+"INSERT INTO Products(Code,Name,Price,Manufacturer) VALUES(3,'ZIP drive',150,4);",,none,norm
+"INSERT INTO Products(Code,Name,Price,Manufacturer) VALUES(4,'Floppy disk',5,6);",,none,norm
+"INSERT INTO Manufacturers(Code,Name) VALUES(1,'Sony');",,none,norm
+"INSERT INTO Manufacturers(Code,Name) VALUES(3,'Hewlett-Packard');",,none,norm
+"CREATE TABLE Manufacturers ( Code INTEGER, Name VARCHAR(255) NOT NULL,PRIMARY KEY (Code));",,none,norm
+select * from products where price >= 60 and price <= 120;,,none,norm
+"select name, price from products;",,none,norm
+"select a.*, b.name from products a join Manufacturers b on(a.manufacturer = b.code);",,none,norm
+from Manufacturers b join Products a,,none,norm
+"select max_price_mapping.name as manu_name, max_price_mapping.price, products_with_manu_name.name as product_name",,none,norm
+"insert into Products values (11, 'Loudspeakers', 70, 2);",,none,norm
+update products set price = price * 0.9 where price >= 120;,,none,norm
+update products set price=price*0.9;,,none,norm
+select Recipient from Package where Weight = 1.5;,,none,norm
+SELECT column_name(s) FROM table_name;,,,
